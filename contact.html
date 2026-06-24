@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aristotus College — Contact</title>
+  <meta name="description" content="Contact Aristotus College.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Aristotus<span>.</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-title">
+    <h1>Contact Us</h1>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="lead">Replace the email and phone below with your real details.</p>
+
+      <!--
+        NOTE: GitHub Pages is static and cannot process form submissions on its own.
+        To make this form actually send email, sign up free at https://formspree.io,
+        create a form, and paste your form endpoint into the action="" below.
+        Until then the form will not send anything.
+      -->
+      <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> info@aristotuscollege.com</p>
+        <p><strong>Phone:</strong> +61 0 0000 0000</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Aristotus College. All Rights Reserved. &nbsp;|&nbsp; <a href="contact.html">Get in touch</a></p>
+  </footer>
+
+</body>
+</html>
