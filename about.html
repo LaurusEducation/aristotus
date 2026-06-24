@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aristotus College — About</title>
+  <meta name="description" content="About Aristotus College.">
+  <style>
 /* ===== Aristotus College — base styles ===== */
 :root {
   --navy: #1c2b4a;
@@ -80,7 +88,7 @@ img { max-width: 100%; display: block; }
 /* ===== Hero ===== */
 .hero {
   background: linear-gradient(rgba(20,33,58,0.78), rgba(20,33,58,0.78)),
-              url("../images/hero.jpg") center/cover no-repeat, var(--navy-dark);
+              url("images/hero.jpg") center/cover no-repeat, var(--navy-dark);
   color: #fff;
   text-align: center;
   padding: 6rem 1.25rem;
@@ -180,3 +188,53 @@ img { max-width: 100%; display: block; }
   .nav-links a { padding: 0.7rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
   .hero h1 { font-size: 2rem; }
 }
+
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Aristotus<span>.</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-title">
+    <h1>About Us</h1>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="lead">Replace this with your real "about" content — your mission,
+      history, and what makes Aristotus College distinctive.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>Describe the college's mission and educational philosophy here.</p>
+        </div>
+        <div class="card">
+          <h3>Our Approach</h3>
+          <p>Describe your teaching approach and student support here.</p>
+        </div>
+        <div class="card">
+          <h3>Accreditation</h3>
+          <p>Describe your accrediting bodies and compliance here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Aristotus College. All Rights Reserved. &nbsp;|&nbsp; <a href="contact.html">Get in touch</a></p>
+  </footer>
+
+</body>
+</html>
