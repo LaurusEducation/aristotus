@@ -54,7 +54,7 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
 }
 
-  /* ===== Logo styling */
+  /* ===== Aristotus Logo styling */
   .brand img {
     width: 180px;
     height: auto;
@@ -70,6 +70,7 @@ img { max-width: 100%; display: block; }
 }
 .brand span { color: var(--accent); } 
     */
+    
     
 .nav-toggle {
   display: none;
@@ -181,6 +182,37 @@ img { max-width: 100%; display: block; }
 }
 .site-footer a { color: var(--accent); }
 
+    
+/* ===== Our Partners */
+.partners-section {
+  background: #e3e8f5;
+}
+
+.partners-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.partner-logo {
+  width: auto;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.rogerian-logo {
+  max-width: 360px;
+}
+
+.horizon-logo {
+  max-width: 320px;
+}
+
+    
 /* ===== Responsive ===== */
 @media (max-width: 760px) {
   .nav-toggle { display: block; }
@@ -206,7 +238,7 @@ img { max-width: 100%; display: block; }
 
   <header class="site-header">
     <nav class="nav">
-      <a class="brand" href="index.html"><img src="images/AristotusCollege-Logo.png" alt="Aristotus College Logo">
+      <a class="brand" href="index.html"><img src="images/Logo/AristotusCollege-Logo.png" alt="Aristotus College Logo">
         
         <!--Aristotus<span>.</span>-->
 
@@ -233,11 +265,27 @@ img { max-width: 100%; display: block; }
   <section class="section">
     <div class="container">
       <h2>Our Partners</h2>
+
+      <div class="partners-row">
+      <img
+        class="partner-logo rogerian-logo"
+        src="images/Logo/RogerianPsychologyCentre(SG)-logo.jpg"
+        alt="Rogerian Psychology Centre Singapore">
+
+      <img
+        class="partner-logo horizon-logo"
+        src="images/Logo/HorizonTraining&Consulting-logo.jpg"
+        alt="Horizon Training and Consulting">
+    </div>
+
+
+      
+      <!--Will update this part when information is collected-->
+      <!--
       <p class="lead">Aristotus College offers
       learner-focused programmes designed for the next generation of practitioners.</p>
 
-      <!--Will update this part when information is collected-->
-      <!--
+
       <div class="grid">
         <div class="card">
           <h3>Accredited Courses</h3>
